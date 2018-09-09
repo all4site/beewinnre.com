@@ -7736,7 +7736,41 @@ a {
   font-weight: bold;
   padding: 50px 0;
   margin: 50px 0; }
+/* SEARCH */
+.search{
+	display: grid;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	z-index: 99999;
+	align-content: center;
+	justify-content: center;
 
+}
+.search input[type=text]{
+	background: inherit;
+	border: none;
+	border-bottom: 1px solid #fff;
+	align-self: center;
+}
+#searchform{
+	display: grid;
+	grid-template-columns: minmax(200px, 900px) minmax(50px, 80px);
+	grid-auto-rows: 200px;
+	position: relative;
+	grid-column-gap: 50px;
+	margin: 0 50px;
+}
+#searchsubmit{
+	background: url('../img/search.svg') no-repeat;
+	border: none;
+	background-position: center;
+	color: transparent;
+	cursor: pointer;
+	outline: none;
+}
+/* END SEARCH */
 h1 {
   font-size: 3rem; }
 
@@ -8070,6 +8104,14 @@ h6 {
       font-weight: normal;
       margin: 20px 0; }
     .trenings .boxInside .far {
+      color: #ECA8AF;
+      font-size: 3rem;
+      margin: 0 0 20px 0; }
+    .trenings .boxInside .fas {
+      color: #ECA8AF;
+      font-size: 3rem;
+      margin: 0 0 20px 0; }
+    .trenings .boxInside .fab {
       color: #ECA8AF;
       font-size: 3rem;
       margin: 0 0 20px 0; }
@@ -8827,7 +8869,11 @@ h6 {
     display: none; }
   .treningBlock .more span {
     display: block;
-    text-align: center; } }
+		text-align: center; }
+		#searchform{
+			grid-column-gap: 10px;
+		}
+	}
 
 @media only screen and (max-width: 768px) {
   .categoryBloc {

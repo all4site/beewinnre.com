@@ -16,15 +16,14 @@
       <div class="footerTop grid">
         <div class="menu grid">
           <h5>menu</h5>
-          <ul>
-            <li>Обо мне</li>
-            <li>О проекте</li>
-            <li>FAQ</li>
-            <li>Блог</li>
-            <li>Цены</li>
-            <li>Связь</li>
-            <li>Конфиденцильность</li>
-          </ul>
+					<?php wp_nav_menu(array(
+					'theme_location'  => 'menu_bottom',
+					'menu'						=>	'Нижнее меню',
+					'container'				=>	false,
+					'menu_class'			=>	'',
+					'menu_id'					=>	'',
+				)); ?>
+
         </div>
         <div class="feedback grid">
           <h5>записаться на консультацию</h5>
@@ -43,11 +42,11 @@
         <div class="work grid">
           <h5>график работы</h5>
           <ul>
-            <li>ПН 9-00 - 10-00</li>
-            <li>ВТ 9-00 - 10-00</li>
-            <li>СР 9-00 - 10-00</li>
-            <li>ЧТ 9-00 - 10-00</li>
-            <li>ПТ 9-00 - 10-00</li>
+            <li><?php echo get_theme_mod(footer_work_mn) ?></li>
+            <li><?php echo get_theme_mod(footer_work_tu) ?></li>
+            <li><?php echo get_theme_mod(footer_work_we) ?></li>
+            <li><?php echo get_theme_mod(footer_work_th) ?></li>
+            <li><?php echo get_theme_mod(footer_work_fr) ?></li>
           </ul>
         </div>
       </div>

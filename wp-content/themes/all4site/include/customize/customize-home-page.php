@@ -1,9 +1,5 @@
 <?php
 
-		$wp_customize->add_panel('home_page', array(
-        'priority' => 10,
-        'title' => ('HOME'),
-		));
     $wp_customize->add_section('top_header', array(
         'title' => __('Header', 'all4site'),
         'priority' => 10,
